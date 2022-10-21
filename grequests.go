@@ -65,7 +65,7 @@ resp, err := grequests.Get(https://api.gap.com/shirts", _)
 
 
 
-url := "https://api.com/monkey"
+url := "https://utilityapi.com/monkey"
 
 resp, err := grequests.Get(url,
 			&grequests.RequestOptions{
