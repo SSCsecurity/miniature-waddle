@@ -1,0 +1,7 @@
+password = "this is a fake pwd"
+passsword = nil
+password = ''
+password = 
+Password = 'four'
+password = ""
+password = "NULL"
