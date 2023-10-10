@@ -5,3 +5,4 @@ password =
 Password = 'four'
 password = ""
 password = "NULL"
+password   =   null
