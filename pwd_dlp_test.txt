@@ -6,3 +6,6 @@ Password = 'four'
 password = ""
 password = "NULL"
 password   =   null
+'password' = alsdnfjkansdvj
+data['password'] = "adfsasdf"
+data{"password"} = "asdofij"
