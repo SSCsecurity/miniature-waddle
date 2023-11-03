@@ -1,0 +1,5 @@
+This is a test file for key val detection
+blah kval = 'abcd'
+kval = ''
+kval = 'efgh'
+fin
