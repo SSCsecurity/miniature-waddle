@@ -1,5 +1,10 @@
 This is a test file for key val detection
 blah kval = 'abcd'
 kval = ''
+kval = ""
+kval := ""
 kval = 'efgh'
+kval := "foo"
+kval == "baz"
+kval = "abc"
 fin
