@@ -7,5 +7,11 @@ kval = 'efgh'
 kval := "foo"
 kval == "baz"
 kval : "boo"
+{
+"kval":"testing"
+}
+
+{"name":"Joe", "kval" : "testing", "password":"something",
+"passwd": "something else"}
 kval = "abc"
 fin
