@@ -6,5 +6,6 @@ kval := ""
 kval = 'efgh'
 kval := "foo"
 kval == "baz"
+kval : "boo"
 kval = "abc"
 fin
