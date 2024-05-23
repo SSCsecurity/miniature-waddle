@@ -62,7 +62,7 @@ resp, err := grequests.Get("https://oldnavy.com/shirts",
 resp, err := grequests.Post("http://api.okta.com/pants?type=jorts",
             &grequests.RequestOptions{Headers: getHeaders()})
 
-resp, err := grequests.Post("http://api.slack.com/pants?type=jeans",
+resp, err := grequests.Post("http://api.slack.com/pants?type=pleets",
             &grequests.RequestOptions{
                 Headers: getHeaders(test,variable), kval == 'baz' })
 
