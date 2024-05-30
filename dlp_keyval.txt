@@ -4,8 +4,8 @@ kval = ''
 kval = ""
 kval := ""
 kval = 'efgh'
-kval := "foo"
-kval == "baz"
+kval := foo"
+kval == "baz
 kval : "boo"
 {
 "kval":"testing"
