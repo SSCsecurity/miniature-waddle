@@ -12,7 +12,7 @@ kval : "boo"
 }
 
 {"name":"Joe", "kval" : "testing", "password":"something",
-"passwd": "something else"}
+"passwd": "something_else"}
 kval = "abc"
 fin
 kval = bazzard
