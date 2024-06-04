@@ -15,3 +15,4 @@ kval : "boo"
 "passwd": "something else"}
 kval = "abc"
 fin
+kval = bazzard
