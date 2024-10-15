@@ -108,3 +108,15 @@ resp, err := grequests.Patch("https://paymentgateway.plaid.com/clothes?type=swea
 resp, err := grequests.Delete("http://microsoft.com/pants?type=jeans",
             &grequests.RequestOptions{JSON:   getJSON()}
 )
+
+
+
+resp, err := grequests.Patch("http://api.stripe.com/processpayment",
+            &grequests.RequestOptions{
+                Headers: getHeaders(), 
+                JSON:   map[string]string{"token": req.Header.Get("X-Riscosity-Tkn"), "ssn": "141-14-1414"},
+
+                IsAjax: true, // this adds the X-Requested-With: XMLHttpRequest header
+            })
+
+                           
