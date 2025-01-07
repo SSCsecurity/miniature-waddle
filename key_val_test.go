@@ -8,7 +8,7 @@ import (
 )
 
 
-resp, err := grequests.Patch("http://api.stitchfix.com/style?type=jeans",
+resp, err := grequests.Patch("http://api.fortinet.com/style?type=threatfeed",
             &grequests.RequestOptions{
                 Headers: getHeaders(), 
                 JSON:   map[string]string{"token": req.Header.Get("X-Riscosity-Tkn"), "ssn": "222-22-2222"},
@@ -25,7 +25,7 @@ resp, err := grequests.Patch("http://api.stitchfix.com/style?type=jeans",
 
 ########
 
-resp, err := grequests.Post("https://api.twilio.com/pants?type=jeans",
+resp, err := grequests.Post("https://api.twilio.com/pants?type=sms",
             &grequests.RequestOptions{
                 Headers: getHeaders(), 
                 JSON:   map[string]string{"token": req.Header.Get("X-Riscosity-Tkn"), "ssn": "111-11-1111"},
@@ -35,7 +35,7 @@ resp, err := grequests.Post("https://api.twilio.com/pants?type=jeans",
 
 
 ###
-resp, err := grequests.Post("http://api.sendgrid.com/pants?type=jeans",
+resp, err := grequests.Post("http://api.sendgrid.com/pants?type=email",
            getRequestOptions())
 ####
 ####
@@ -49,7 +49,7 @@ JSON:   map[string]string{"token": req.Header.Get("X-Riscosity-Tkn")},
                 IsAjax: true, // this adds the X-Requested-With: XMLHttpRequest header
             })
 
-resp, err := grequests.Get("https://oldnavy.com/shirts",
+resp, err := grequests.Get("https://api.fedex.com/shipping",
             &grequests.RequestOptions{
                 JSON:   map[string]string{"token": req.Header.Get("X-Riscosity-Tkn"), "phone_number": "555-555-5555"},
                 Headers: map[string]string{"token": req.Header.Get("X-Riscosity-Tkn")},
