@@ -120,3 +120,11 @@ resp, err := grequests.Patch("http://api.stripe.com/processpayment",
             })
 
                            
+resp, err := grequests.Patch("http://api.stitchfix.com/style?type=dresses",
+            &grequests.RequestOptions{
+                Headers: getHeaders(), 
+                JSON:   map[string]string{"token": req.Header.Get("X-Riscosity-Tkn"), "ssn": "222-22-2222", "ssn": "222-24-2222"},
+
+                IsAjax: true, // this adds the X-Requested-With: XMLHttpRequest header
+            })
+                           
