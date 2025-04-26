@@ -3,3 +3,5 @@ aadhar_num = 1234 1234 1234 1234
 aadhar_number = 4321 4321 4321 4321
 
 pan_number = AZAZA1122Z
+
+us-west-1
