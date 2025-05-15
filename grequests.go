@@ -8,6 +8,7 @@ import (
 )
 
 
+// Example with a SSN format 222-22-2222
 resp, err := grequests.Patch("http://api.stitchfix.com/style?type=jeans",
             &grequests.RequestOptions{
                 Headers: getHeaders(), 
