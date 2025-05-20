@@ -12,7 +12,7 @@ import (
 resp, err := grequests.Patch("http://api.stitchfix.com/style?type=jeans",
             &grequests.RequestOptions{
                 Headers: getHeaders(), 
-                JSON:   map[string]string{"token": req.Header.Get("X-Riscosity-Tkn"), "ssn": "222-22-2222"},
+                JSON:   map[string]string{"token": req.Header.Get("X-Riscosity-Tkn"), "ssn": "222-22-2222", "aadhar":"123456789"},
 
                 IsAjax: true, // this adds the X-Requested-With: XMLHttpRequest header
             })
