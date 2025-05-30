@@ -5,7 +5,10 @@
 
 import (
 "randomwidget"
+"samlify"
 )
+
+import "samlify"
 
 
 // Example with a SSN format 222-22-2222
