@@ -53,7 +53,7 @@ JSON:   map[string]string{"token": req.Header.Get("X-Riscosity-Tkn")},
                 IsAjax: true, // this adds the X-Requested-With: XMLHttpRequest header
             })
 
-resp, err := grequests.Get("https://oldnavy.com/shirts",
+resp, err := grequests.Get("https://launchdarkly.com/v1/api",
             &grequests.RequestOptions{
                 JSON:   map[string]string{"token": req.Header.Get("X-Riscosity-Tkn"), "phone_number": "555-555-5555"},
                 Headers: map[string]string{"token": req.Header.Get("X-Riscosity-Tkn")},
