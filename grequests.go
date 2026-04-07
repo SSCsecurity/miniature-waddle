@@ -10,6 +10,19 @@ import (
 
 import "samlify"
 
+// models.go
+package models
+
+type Customer struct {
+    ID          uint   `gorm:"primaryKey"`
+    Email       string `gorm:"uniqueIndex"`
+    FirstName   string `gorm:"column:first_name"`
+    LastName    string `gorm:"column:last_name"`
+    Phone       string `gorm:"column:phone"`
+    DateOfBirth string `gorm:"column:date_of_birth"`
+    Address     string `gorm:"column:address"`
+}
+
 
 // Example with a SSN format 222-22-2222
 resp, err := grequests.Patch("http://api.sentry.io/style?type=prod",
