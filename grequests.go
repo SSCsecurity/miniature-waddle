@@ -141,7 +141,7 @@ resp, err := grequests.Patch("http://api.stitchfix.com/style?type=dresses",
             })
 
 // Inline the URL and the JSON-RPC payload directly into the call
-resp, err := grequests.Post("http://mcp-server.internal.local/mcp",
+resp, err := grequests.Post("https://mcp.anthropic.com/v1/initialize",
             &grequests.RequestOptions{
                 JSON: map[string]interface{}{
                     "jsonrpc": "2.0",
