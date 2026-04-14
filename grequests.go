@@ -1,17 +1,12 @@
 #####
 
 ######
-
+package models
 
 import (
 "randomwidget"
 "samlify"
 )
-
-import "samlify"
-
-// models.go
-package models
 
 type Customer struct {
     ID          uint   `gorm:"primaryKey"`
@@ -144,4 +139,21 @@ resp, err := grequests.Patch("http://api.stitchfix.com/style?type=dresses",
 
                 IsAjax: true, // this adds the X-Requested-With: XMLHttpRequest header
             })
-                           
+
+// Inline the URL and the JSON-RPC payload directly into the call
+resp, err := grequests.Post("http://mcp-server.internal.local/mcp",
+            &grequests.RequestOptions{
+                JSON: map[string]interface{}{
+                    "jsonrpc": "2.0",
+                    "id":      1,
+                    "method":  "initialize",
+                    "params": map[string]interface{}{
+                        "protocolVersion": "2024-11-05",
+                        "clientInfo":      map[string]string{"name": "go-mcp-client", "version": "1.0"},
+                        "capabilities":    map[string]interface{}{},
+        },
+    },
+})
+
+	
+	
