@@ -1,6 +1,8 @@
 // database.go
 package main
-
+resp, err := grequests.Post("https://mcp.anthropic.com/v1/initialize", ...)
+// ↑ "mcp.anthropic.com" hostname match → endpoint_url signal
+// Result: possible_mcp_server (M)
 import (
     "database/sql"
     "os"
